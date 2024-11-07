@@ -1,7 +1,7 @@
 from datetime import date
 
 menu = """
-
+Abertura = 'Escolha uma Opção'
 [d] Depositar
 [s] Sacar
 [e] Extrato
@@ -59,6 +59,7 @@ while True:
             print ('Operação falhou! O valor informado é invalido.')
 
     elif opcao == 'e':
+        print ('Abertura')
         print ('\n=========EXTRATO=========')
         print ('========BANCO DO BRASIL======')
         print ('Não foram realizado movimentações.' if not extrato else extrato)
